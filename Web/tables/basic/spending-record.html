@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My spending record</title>
+    <link href="minimal-table.css" rel="stylesheet" type="text/css">
+    <style>
+        tbody {
+          font-size: 95%;
+          font-style: italic;
+        }
+        tfoot {
+          font-weight: bold;
+        }    
+    </style>
+  </head>
+  <body>
+    <h1>My spending record</h1>
+
+      <table>
+        <caption>How I chose to spend my money</caption>
+        <!-- <thead>为表头，必须包住表格的表头部分(往往都是每列的标题)。一般是第一行，但如果你使用了 <col>/<colgroup> 元素，那么 <thead> 元素就需要放在它们的下面 -->
+        <thead>
+          <tr>
+            <th>Purchase</th>
+            <th>Location</th>
+            <th>Date</th>
+            <th>Evaluation</th>
+            <th>Cost (€)</th>
+          </tr>
+        </thead>
+        <!-- <tfoot>表尾：需要包住表格的表尾部分。一般是最后一行，往往是对前面所有行的总结。 -->
+        <tfoot>
+          <tr>
+            <td colspan="4"> SUM</td>
+            <td>118</td>
+          </tr>
+        </tfoot>
+        <!-- <tbody>表体：需要包住表格内容的主要部分（不是表头和表尾） -->
+        <tbody>       
+          <tr>
+            <td>Haircut</td>
+            <td>Hairdresser</td>
+            <td>12/09</td>
+            <td>Great idea</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>Lasagna</td>
+            <td>Restaurant</td>
+            <td>12/09</td>
+            <td>Regrets</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <td>Shoes</td>
+            <td>Shoeshop</td>
+            <td>13/09</td>
+            <td>Big regrets</td>
+            <td>65</td>
+          </tr>
+          <tr>
+            <td>Toothpaste</td>
+            <td>Supermarket</td>
+            <td>13/09</td>
+            <td>Good</td>
+            <td>5</td>
+          </tr>
+        </tbody>
+    </table>
+
+  </body>
+</html>
